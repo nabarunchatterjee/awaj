@@ -1,27 +1,110 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
+  /* background-color: white; */
   min-height: 100vh;
+  color: white;
+}
+
+.Top {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.Main {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 4rem;
+}
+
+.Slogan {
+  /* position: fixed;
+  top: 150px; */
+  min-height: 60vh;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.Header {
+  font-size: 1.5em;
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+.Timer {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 8px;
+  /* border-bottom: 1px solid gray; */
+  color: #ee4b2b;
+}
+
+.Next {
+  bottom: 20px;
+  position: fixed;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
   color: white;
+  border-radius: 20px;
+  padding: 16px;
+}
+
+.ModeBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 10vh;
+}
+
+.Mode {
+  font-size: 1.5rem;
+  color: white;
+  padding: 16px;
+  background-color: #282c34;
+  border: none;
+  min-width: 40vw;
+}
+
+.button:hover {
+  transition-duration: 0.1s;
+  background-color: #3a3a3a;
+}
+
+.button:after {
+  content: "";
+  display: block;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+.button:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 20px;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
 }
 
 .App-link {
