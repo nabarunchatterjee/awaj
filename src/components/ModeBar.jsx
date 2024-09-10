@@ -16,7 +16,7 @@ function ModeButton({ mode, text, handleClick }) {
       style={{
         fontWeight: isCurrentMode ? "bold" : "inherit",
         color: isCurrentMode ? "white" : "gray",
-        outline: isCurrentMode ? "2px solid white" : "none",
+        borderBottom: isCurrentMode ? "2px solid white" : "transparent",
         flex: 1,
         cursor: "pointer",
         padding: "1.5rem",
