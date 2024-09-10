@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/awaj-code/static/css/main.f7a24918.css",
+    "main.js": "/awaj-code/static/js/main.72336d28.js",
+    "static/js/453.2dbf9da2.chunk.js": "/awaj-code/static/js/453.2dbf9da2.chunk.js",
+    "index.html": "/awaj-code/index.html",
+    "main.f7a24918.css.map": "/awaj-code/static/css/main.f7a24918.css.map",
+    "main.72336d28.js.map": "/awaj-code/static/js/main.72336d28.js.map",
+    "453.2dbf9da2.chunk.js.map": "/awaj-code/static/js/453.2dbf9da2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7a24918.css",
+    "static/js/main.72336d28.js"
+  ]
+}
