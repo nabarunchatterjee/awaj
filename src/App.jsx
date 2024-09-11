@@ -22,7 +22,10 @@ function App() {
   useEffect(() => handleSloganChange(), []);
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{ width: window.innerWidth > 700 ? "700px" : "100vw" }}
+    >
       <TopBar addSlogan={<AddSlogan handleClick={() => setOpen(true)} />} />
       <ModeBar mode={mode} handleClick={setMode} />
       <WaitTime />

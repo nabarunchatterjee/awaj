@@ -4,6 +4,7 @@
   /* background-color: white; */
   min-height: 100vh;
   color: white;
+  margin: 0 auto;
 }
 
 .Top {
@@ -67,6 +68,7 @@
   align-items: center;
   justify-content: space-evenly;
   min-height: 7vh;
+  max-width: inherit;
 }
 
 .Mode {
@@ -75,7 +77,6 @@
   padding: 16px;
   background-color: #282c34;
   border: none;
-  min-width: 40vw;
 }
 
 .button:hover {
