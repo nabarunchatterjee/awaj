@@ -1,7 +1,6 @@
 export default function RandomSlogan({ slogan, handleClick }) {
   return (
     <div className="Main">
-      {/* <div className="Slogan">{slogan}</div> */}
       <Slogan text={slogan} />
       <button className="Next button" onClick={handleClick}>
         Next
@@ -12,7 +11,6 @@ export default function RandomSlogan({ slogan, handleClick }) {
 
 function Slogan({ text }) {
   const [lead, chorus] = text.split(",");
-  console.log("lead", lead, "chorus", chorus);
 
   return (
     <div style={{ minHeight: "60vh" }} className="Slogan">
