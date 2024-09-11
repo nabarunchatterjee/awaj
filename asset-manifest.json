@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b13f316.css",
-    "main.js": "/static/js/main.5fc19436.js",
+    "main.css": "/static/css/main.9f5b9f94.css",
+    "main.js": "/static/js/main.13d2980d.js",
     "static/js/453.2dbf9da2.chunk.js": "/static/js/453.2dbf9da2.chunk.js",
+    "static/media/protest-announcement-svgrepo-com.svg": "/static/media/protest-announcement-svgrepo-com.25b3bd6b70393d5429e1b7ebfe7e6325.svg",
     "index.html": "/index.html",
-    "main.1b13f316.css.map": "/static/css/main.1b13f316.css.map",
-    "main.5fc19436.js.map": "/static/js/main.5fc19436.js.map",
+    "main.9f5b9f94.css.map": "/static/css/main.9f5b9f94.css.map",
+    "main.13d2980d.js.map": "/static/js/main.13d2980d.js.map",
     "453.2dbf9da2.chunk.js.map": "/static/js/453.2dbf9da2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b13f316.css",
-    "static/js/main.5fc19436.js"
+    "static/css/main.9f5b9f94.css",
+    "static/js/main.13d2980d.js"
   ]
 }
