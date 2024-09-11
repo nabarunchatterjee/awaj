@@ -10,7 +10,7 @@ export default function AddSlogan({ handleClick }) {
       }}
       onClick={handleClick}
     >
-      + Add Slogan
+      &#43; Add Slogan
     </button>
   );
 }
