@@ -1,4 +1,4 @@
-export default function AddSloganDialog({ open, handleClose }) {
+export default function ContactDialog({ open, handleClose }) {
   return (
     <dialog
       open={open}
@@ -66,36 +66,6 @@ export default function AddSloganDialog({ open, handleClose }) {
         </ul>
       </div>
       <hr />
-      <div
-        style={{
-          color: "gray",
-          fontSize: "1rem",
-          display: "flex",
-          flexDirection: "column",
-          justifyContents: "start",
-          textAlign: "left",
-        }}
-      >
-        For any other communication/feedback
-        <ul>
-          <li>
-            Send an email{" "}
-            <a
-              href="mailto:nabarun.chatterjeee@gmail.com?subject=
-              Communication regarding Awaj"
-            >
-              here
-            </a>{" "}
-            or,
-          </li>
-          <li>
-            Raise an issue in the{" "}
-            <a href="https://github.com/nabarunchatterjee/awaj/issues">
-              Awaj repo issue tracker
-            </a>
-          </li>
-        </ul>
-      </div>
     </dialog>
   );
 }

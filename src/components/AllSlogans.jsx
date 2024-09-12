@@ -9,17 +9,17 @@ export default function AllSlogans({ sloganList }) {
         padding: "8px",
       }}
     >
-      {sloganList.map((item, key) => (
-        <SloganCard key={key} item={item} />
+      {sloganList.map((item) => (
+        <SloganCard key={item} item={item} />
       ))}
     </div>
   );
 }
 
-function SloganCard({ key, item }) {
+function SloganCard({ item }) {
   return (
     <div
-      key={key}
+      key={item}
       style={{
         fontSize: "2rem",
         borderRadius: "5px",
