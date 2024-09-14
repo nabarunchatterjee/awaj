@@ -9,10 +9,10 @@ export default function ContactButton() {
       <Button
         style={{
           background: "transparent",
-          color: "white",
           borderRadius: "5px",
           padding: "8px 18px",
           fontSize: "1.2rem",
+          color: "cornflowerblue",
         }}
         onClick={() => setOpen(true)}
       >

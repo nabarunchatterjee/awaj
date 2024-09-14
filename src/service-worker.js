@@ -73,3 +73,4 @@ self.addEventListener("message", (event) => {
 
 // Any other custom service worker logic can go here.
 // eslint-disable-next-line
+const version = "0.1.0";
