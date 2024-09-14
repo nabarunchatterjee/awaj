@@ -257,6 +257,13 @@ const events = [
       "The government agrees to meet the protesting doctors.However, they refuse a live telecast of the procedure and allow only 15 doctors against the 30 the doctors had wanted.",
     description: "",
   },
+  {
+    title: "Impasse",
+    time: "September 13, 2024",
+    details:
+      "In a 4-page letter, the doctors seek the intervention of PM Modi and President Murmu to break the impasse",
+    description: "",
+  },
 ];
 
 export default events;

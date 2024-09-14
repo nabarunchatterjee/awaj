@@ -13,7 +13,7 @@ function Slogan({ text }) {
   const [lead, chorus] = text.split(",");
 
   return (
-    <div style={{ minHeight: "55vh" }} className="Slogan">
+    <div style={{ height: "55%" }} className="Slogan">
       <div>{lead}</div>
       <div style={{ color: "#ee4b2b" }}>{chorus}</div>
     </div>

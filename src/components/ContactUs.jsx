@@ -9,6 +9,7 @@ export default function ContactDialog({ open, handleClose }) {
         borderRadius: "10px",
         border: 0,
         background: "rgba(24,24,24,1)",
+        zIndex: 999,
       }}
     >
       <div
@@ -23,7 +24,7 @@ export default function ContactDialog({ open, handleClose }) {
           alignItems: "baseline",
         }}
       >
-        Add Slogan{" "}
+        Contact{" "}
         <button
           style={{
             width: "50px",
@@ -53,19 +54,16 @@ export default function ContactDialog({ open, handleClose }) {
       >
         <ul>
           <li>
-            Send an email{" "}
-            <a href="mailto:nabarun.chatterjeee@gmail.com?subject=New Slogan(s) for Awaj">
-              here
-            </a>{" "}
-            or,
+            <a href="mailto:nabarun.chatterjeee@gmail.com">Email</a>
           </li>
           <li>
-            Raise a pull request in the{" "}
-            <a href="https://github.com/nabarunchatterjee/awaj"> Awaj repo</a>
+            <a href="https://github.com/nabarunchatterjee/awaj">
+              {" "}
+              Awaj github repo
+            </a>
           </li>
         </ul>
       </div>
-      <hr />
     </dialog>
   );
 }

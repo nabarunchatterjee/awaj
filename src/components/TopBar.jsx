@@ -1,5 +1,5 @@
 import { ReactComponent as Logo } from "../protest-announcement-svgrepo-com.svg";
-import Contact from "./ContactUs";
+import ContactButton from "./Contact";
 export default function TopBar() {
   return (
     <header
@@ -27,7 +27,7 @@ export default function TopBar() {
         />
         আওয়াজ
       </div>
-      <Contact />
+      <ContactButton />
     </header>
   );
 }

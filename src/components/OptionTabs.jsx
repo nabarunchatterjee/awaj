@@ -8,7 +8,7 @@ import EventTimeline from "./Events";
 import Slogan from "./Slogan";
 
 export default function OptionTabs() {
-  const [value, setValue] = useState("1");
+  const [value, setValue] = useState("2");
 
   const handleChange = (_, newValue) => {
     setValue(newValue);
@@ -45,10 +45,13 @@ export default function OptionTabs() {
             />
           </TabList>
         </Box>
-        <TabPanel value="1" sx={{ p: 1, pr: 0 }}>
+        <TabPanel value="1" sx={{ p: 1, pr: 0, pl: 0 }}>
           <Slogan />
         </TabPanel>
-        <TabPanel value="2" sx={{ p: 0 }}>
+        <TabPanel
+          value="2"
+          sx={{ p: 0, justifyContent: "center", display: "flex" }}
+        >
           <EventTimeline />
         </TabPanel>
       </TabContext>

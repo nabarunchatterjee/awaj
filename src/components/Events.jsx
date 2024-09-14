@@ -15,6 +15,7 @@ import IconButton from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { styled } from "@mui/material/styles";
 import Collapse from "@mui/material/Collapse";
+import Stack from "@mui/material/Stack";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -53,6 +54,7 @@ function Event({ event }) {
   // calculate (and subtract) whole days
   var days = Math.floor(delta / 86400);
   // console.log("event", event, days);
+
   return (
     <TimelineItem key={event.title}>
       <TimelineSeparator>
@@ -133,18 +135,38 @@ function EventCollapse({ expanded, event }) {
 
 export default function EventTimeline() {
   return (
-    <Timeline
-      sx={{
-        [`& .${timelineItemClasses.root}:before`]: {
-          flex: 0,
-          padding: 0,
-        },
-        padding: "1px 2px",
-      }}
-    >
-      {events.map((item) => (
-        <Event event={item} key={item.title} />
-      ))}
-    </Timeline>
+    <Stack direction="column" justifyContent="center" alignItems="center">
+      <Typography sx={{ fontSize: "1.2rem", p: 1 }}>
+        {" "}
+        To add a new event send mail{" "}
+        <a href="mailto: nabarun.chatterjee@gmail.com?subject=New Event for Awaj">
+          here
+        </a>{" "}
+        with a short summary of event and atleast 2 references links
+      </Typography>
+      <Typography sx={{ fontSize: "1rem", p: 1 }}>
+        Reference:{" "}
+        <a
+          href="https://www.thehindu.com/news/cities/kolkata/kolkata-doctor-rape-and-murder-case-timeline-of-events/article68625226.ece"
+          style={{ color: "cornflowerblue", textDecoration: "underline" }}
+        >
+          Online Article by The Hindu
+        </a>
+      </Typography>
+      <Timeline
+        sx={{
+          [`& .${timelineItemClasses.root}:before`]: {
+            flex: 0,
+            padding: 0,
+          },
+          padding: "1px 2px",
+          maxWidth: "500px",
+        }}
+      >
+        {events.map((item) => (
+          <Event event={item} key={item.title} />
+        ))}
+      </Timeline>
+    </Stack>
   );
 }
