@@ -1,5 +1,6 @@
 import { ReactComponent as Logo } from "../protest-announcement-svgrepo-com.svg";
-export default function TopBar({ addSlogan }) {
+import ContactButton from "./Contact";
+export default function TopBar() {
   return (
     <header
       style={{
@@ -9,7 +10,6 @@ export default function TopBar({ addSlogan }) {
         flexDirection: "row",
         padding: "8px",
         fontSize: "2rem",
-        borderBottom: "1px solid white",
       }}
     >
       <div
@@ -27,7 +27,7 @@ export default function TopBar({ addSlogan }) {
         />
         আওয়াজ
       </div>
-      {addSlogan}
+      <ContactButton />
     </header>
   );
 }

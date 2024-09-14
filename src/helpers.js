@@ -1,5 +1,5 @@
 export function timeDifference() {
-  const date1 = new Date("8/08/2024");
+  const date1 = new Date("9 August, 2024");
   const date2 = new Date();
   var delta = Math.abs(date2 - date1) / 1000;
 

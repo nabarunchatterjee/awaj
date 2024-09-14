@@ -19,9 +19,8 @@ function ModeButton({ mode, text, handleClick }) {
         borderBottom: isCurrentMode ? "2px solid white" : "transparent",
         flex: 1,
         cursor: "pointer",
-        // padding: "1.5rem",
         textAlign: "center",
-        fontSize: "1.5rem",
+        fontSize: "1rem",
       }}
     >
       {text}

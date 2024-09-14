@@ -1,4 +1,4 @@
-export default function AddSloganDialog({ open, handleClose }) {
+export default function ContactDialog({ open, handleClose }) {
   return (
     <dialog
       open={open}
@@ -9,6 +9,7 @@ export default function AddSloganDialog({ open, handleClose }) {
         borderRadius: "10px",
         border: 0,
         background: "rgba(24,24,24,1)",
+        zIndex: 999,
       }}
     >
       <div
@@ -23,7 +24,7 @@ export default function AddSloganDialog({ open, handleClose }) {
           alignItems: "baseline",
         }}
       >
-        Add Slogan{" "}
+        Contact{" "}
         <button
           style={{
             width: "50px",
@@ -53,45 +54,12 @@ export default function AddSloganDialog({ open, handleClose }) {
       >
         <ul>
           <li>
-            Send an email{" "}
-            <a href="mailto:nabarun.chatterjeee@gmail.com?subject=New Slogan(s) for Awaj">
-              here
-            </a>{" "}
-            or,
+            <a href="mailto:nabarun.chatterjeee@gmail.com">Email</a>
           </li>
           <li>
-            Raise a pull request in the{" "}
-            <a href="https://github.com/nabarunchatterjee/awaj"> Awaj repo</a>
-          </li>
-        </ul>
-      </div>
-      <hr />
-      <div
-        style={{
-          color: "gray",
-          fontSize: "1rem",
-          display: "flex",
-          flexDirection: "column",
-          justifyContents: "start",
-          textAlign: "left",
-        }}
-      >
-        For any other communication/feedback
-        <ul>
-          <li>
-            Send an email{" "}
-            <a
-              href="mailto:nabarun.chatterjeee@gmail.com?subject=
-              Communication regarding Awaj"
-            >
-              here
-            </a>{" "}
-            or,
-          </li>
-          <li>
-            Raise an issue in the{" "}
-            <a href="https://github.com/nabarunchatterjee/awaj/issues">
-              Awaj repo issue tracker
+            <a href="https://github.com/nabarunchatterjee/awaj">
+              {" "}
+              Awaj github repo
             </a>
           </li>
         </ul>
